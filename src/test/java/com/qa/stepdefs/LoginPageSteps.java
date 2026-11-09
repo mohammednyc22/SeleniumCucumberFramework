@@ -52,5 +52,7 @@ public class LoginPageSteps {
     public void user_should_be_navigated_to_products_page() {
         String currentUrl = DriverFactory.getDriver().getCurrentUrl();
         Assertions.assertTrue(currentUrl.contains("inventory.html"));
+
+        System.out.println("--- Executing CI/CD Verification Test ---");
     }
 }
